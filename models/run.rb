@@ -1,0 +1,3 @@
+class Escape < BaseAction
+
+end

@@ -1,0 +1,3 @@
+class SaveAndQuit < BaseAction
+
+end

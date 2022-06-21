@@ -1,0 +1,3 @@
+class Move < BaseAction
+
+end

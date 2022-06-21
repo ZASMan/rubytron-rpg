@@ -1,5 +1,9 @@
 require 'sinatra'
-require_relative 'lib/rubytron/controller'
+
+Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
+Dir[File.dirname(__FILE__) + '/models/*.rb'].each {|file| require file }
+Dir[File.dirname(__FILE__) + '/controllers/*.rb'].each {|file| require file }
+
 
 get '/' do
   erb :index
